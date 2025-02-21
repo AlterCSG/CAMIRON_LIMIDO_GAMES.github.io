@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 69, 58, 0.5);
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    color: #ff453a;
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: #ff453a;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d72e2e;
+}
+
+canvas {
+    border: 3px solid #ff453a;
+    background-color: #2a2a2a;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn-inicio {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    background: #0033cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-sizing: border-box;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    /* Adaptación para tabletas */
+    .container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input {
+        width: 90%;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .btn-inicio {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adaptación para móviles */
+    .container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    input {
+        width: 100%;
+        padding: 6px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .btn-inicio {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}

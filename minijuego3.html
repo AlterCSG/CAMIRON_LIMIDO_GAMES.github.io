@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="styles_game_hangman.css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/127792/isolated/preview/19ed433991134a2ad4fcf6bad060c7a6-icono-de-joystick-para-juegos.png">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Juego del Ahorcado</h1>
+            <canvas id="canvas" width="200" height="250"></canvas>
+            <p id="palabra"></p>
+            <p>Intentos restantes: <span id="intentos">6</span></p>
+            <input type="text" id="letra" maxlength="1" placeholder="Ingresa una letra">
+            <button id="botonProbar" onclick="verificarLetra()">Probar</button>
+            <button id="botonNuevaPartida" onclick="nuevaPartida()" style="display:none;">Nueva Partida</button>
+            <p id="mensaje"></p>
+            <a href="index.html" class="btn-inicio">Volver Al Inicio</a>
+        </div>
+        <script src="gamethree.js"></script>
+    </body>
+</html>

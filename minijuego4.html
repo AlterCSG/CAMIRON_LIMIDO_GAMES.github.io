@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ruleta Francesa</title>
+        <link rel="stylesheet" href="styles_game_casino.css">
+        <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/127792/isolated/preview/19ed433991134a2ad4fcf6bad060c7a6-icono-de-joystick-para-juegos.png">
+    </head>
+    <body>
+        <div class="casino">
+            <h1>Ruleta Francesa</h1>
+            <div class="ruleta-container">
+                <div class="ruleta">
+                    <div class="bola"></div>
+                </div>
+            </div>
+            <div class="mesa">
+                <div class="apuesta-container">
+                    <label for="monto" class="apuesta-label">Monto a apostar:</label>
+                    <input type="number" id="monto" class="apuesta-input" min="1" value="10">
+                    <p class="apuesta-creditos">Créditos: <span id="creditos">1000</span></p>
+                </div>
+                <div class="apuestas">
+                    <button class="apuesta" data-value="rojo">Rojo</button>
+                    <button class="apuesta" data-value="negro">Negro</button>
+                    <button class="apuesta" data-value="par">Par</button>
+                    <button class="apuesta" data-value="impar">Impar</button>
+                </div>
+                <table class="tabla-ruleta">
+                    <tbody>
+                        <tr>
+                            <td data-value="0" class="verde">0</td>
+                        </tr>
+                        <tr>
+                            <td data-value="3" class="rojo">3</td>
+                            <td data-value="6" class="negro">6</td>
+                            <td data-value="9" class="rojo">9</td>
+                            <td data-value="12" class="negro">12</td>
+                            <td data-value="15" class="rojo">15</td>
+                            <td data-value="18" class="negro">18</td>
+                        </tr>
+                        <tr>
+                            <td data-value="2" class="negro">2</td>
+                            <td data-value="5" class="rojo">5</td>
+                            <td data-value="8" class="negro">8</td>
+                            <td data-value="11" class="rojo">11</td>
+                            <td data-value="14" class="negro">14</td>
+                            <td data-value="17" class="rojo">17</td>
+                        </tr>
+                        <tr>
+                            <td data-value="1" class="rojo">1</td>
+                            <td data-value="4" class="negro">4</td>
+                            <td data-value="7" class="rojo">7</td>
+                            <td data-value="10" class="negro">10</td>
+                            <td data-value="13" class="rojo">13</td>
+                            <td data-value="16" class="negro">16</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="girar">Girar</button>
+            </div>
+            <div class="resultado">
+                <p id="mensaje"></p>
+            </div>
+            <a href="index.html" class="btn-inicio">Volver Al Inicio</a>
+        </div>
+
+        <script src="gamefor.js"></script>
+    </body>
+</html>

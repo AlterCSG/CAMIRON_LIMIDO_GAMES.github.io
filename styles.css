@@ -1,0 +1,164 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 69, 58, 0.5);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #ff453a;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.inicio-btn, .btn-game {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    background: #0033cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.inicio-btn:hover, .btn-game:hover {
+    background: #002699;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #333;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    background: #ff453a;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background: #d72e2e;
+}
+
+.hidden {
+    display: none;
+}
+
+canvas {
+    border: 3px solid #ff453a;
+    background-color: #2a2a2a;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+/* Estilo para el rompecabezas */
+#puzzleContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 100px));
+    grid-template-rows: repeat(3, minmax(80px, 100px));
+    gap: 5px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.puzzlePiece {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.puzzlePiece img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo para los botones del rompecabezas */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn-game-rompecabezas {
+    padding: 12px 20px;
+    background: #ff453a;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.btn-game-rompecabezas:hover {
+    background-color: #d72e2e;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .inicio-btn, .btn-game, button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    #puzzleContainer {
+        grid-template-columns: repeat(3, minmax(60px, 80px));
+        grid-template-rows: repeat(3, minmax(60px, 80px));
+    }
+}
