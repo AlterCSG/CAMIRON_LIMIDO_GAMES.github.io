@@ -8,12 +8,6 @@ let food = {x: 0, y: 0};
 let score = 0;
 let gameInterval;
 
-// Detectar si es un dispositivo móvil
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-if (isMobile) {
-    document.getElementById("touchControls").style.display = "block";
-}
-
 // Función para iniciar el juego
 function startGame() {
     snake = [{x: 50, y: 50}];
