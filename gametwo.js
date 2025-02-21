@@ -133,8 +133,14 @@ function moveSnakeTouch(newDirection) {
 }
 
 document.getElementById("generateControlsBtn").addEventListener("click", function () {
-    alert("Botón presionado");
-    document.getElementById("touchControls").style.display = "flex";
+    const touchControls = document.getElementById("touchControls");
+    
+    // Alternar la visibilidad de los controles
+    if (touchControls.style.display === "none" || touchControls.style.display === "") {
+        touchControls.style.display = "flex";
+    } else {
+        touchControls.style.display = "none";
+    }
 });
 
 
